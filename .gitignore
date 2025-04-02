@@ -1,0 +1,4 @@
+# Arquivos a serem ignorados 
+*.log 
+*.tmp 
+.DS_Store 
