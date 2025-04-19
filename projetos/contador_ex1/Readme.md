@@ -63,30 +63,3 @@ Baseado nos `#define`s no código (`contador_ex1.c`):
     *   Um terminal -> `GPIO 6` (Pino 9 do Pico)
     *   Outro terminal -> `GND` (Qualquer pino GND do Pico)
 
-## Compilando o Projeto
-
-1.  Clone ou baixe este repositório.
-2.  Certifique-se de que o caminho para o Pico SDK esteja configurado corretamente (variável de ambiente `PICO_SDK_PATH` ou ajuste no `CMakeLists.txt`).
-3.  Navegue até o diretório do projeto no terminal.
-4.  Crie um diretório de build e entre nele:
-    ```bash
-    mkdir build
-    cd build
-    ```
-5.  Execute o CMake para configurar o projeto (assumindo que `CMakeLists.txt` está no diretório pai `..`):
-    ```bash
-    cmake ..
-    ```
-6.  Compile o projeto:
-    ```bash
-    make
-    ```
-7.  Após a compilação bem-sucedida, você encontrará o arquivo firmware `contador_oled.uf2` (ou o nome definido no `CMakeLists.txt`) dentro do diretório `build`.
-
-## Gravando no Pico
-
-1.  Pressione e segure o botão `BOOTSEL` no seu Pico.
-2.  Conecte o Pico ao seu computador via USB.
-3.  Solte o botão `BOOTSEL`. O Pico deve aparecer como um dispositivo de armazenamento USB chamado `RPI-RP2`.
-4.  Copie o arquivo `.uf2` gerado (ex: `contador_oled.uf2`) para dentro do dispositivo `RPI-RP2`.
-5.  O Pico irá reiniciar automaticamente e executar o programa.
