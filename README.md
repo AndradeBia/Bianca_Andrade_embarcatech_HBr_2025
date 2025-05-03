@@ -1,4 +1,4 @@
-# Repositório Bianca Andrade - EmbarkateCH
+# Repositório Bianca Andrade - Embarcatech
 
 Este repositório guardará projetos desenvolvidos no curso EmbarkateCH.
 
